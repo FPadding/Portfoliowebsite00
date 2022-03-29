@@ -1,0 +1,41 @@
+.comp {
+    text-align: right;
+    font-size: 50px;
+}
+figure {
+    padding-top: 5px;
+    margin: 0;
+}
+.grid {
+    display:grid;
+    grid-template-rows: 150px 75px 50PX auto 50px;
+    gap: 5px;
+}
+
+@media (min-width: 720px) {
+    .grid {
+        grid-template: 210px 70px auto 50px / auto 1fr 5fr;
+    }
+    nav {
+        grid-column: 1/-1;
+    }
+    header {
+        grid-row-start: 2;
+    }
+    .comp{
+        grid-row-start: 2;
+        grid-column-start: 3;
+    }
+    figure{
+        grid-row: 3;
+        grid-column: 1 / -1;
+    }
+    footer{
+        grid-row: 4;
+        grid-column: 1 / -1;
+    }
+    .comp {
+        text-align:left;
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,34 @@
+.grid {
+    display:grid;
+    grid-template-rows: 212px 75px auto auto 50px;
+    gap: 5px;
+}
+
+@media (min-width: 720px) {
+    .grid {
+        grid-template: 212px 75px auto 50px / 2fr 3fr;
+    }
+    nav {
+        grid-column: 1/-1;
+    }
+    header {
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+    figure{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    p {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    footer{
+        grid-row: 4;
+        grid-column: 1 / -1;
+    }
+    .comp {
+        text-align:left;
+        padding-top: 20px;
+    }
+}

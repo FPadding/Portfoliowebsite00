@@ -1,0 +1,54 @@
+nav {
+    height: 230px;
+}
+header {
+    line-height: 0.8;
+}
+.spacing {
+    padding-top: 20px;
+}
+input, textarea {
+    background-color: #24282C;
+    color: #fff;
+    border: solid 2px #CCECE4;
+}
+input {
+    height: 26px;
+}
+.grid {
+    display:grid;
+    grid-template: 30px 30px 30px auto auto / 150px 1fr;
+    gap: 10px;
+    text-align: right;
+    padding: 20px;
+}
+#l2 {
+    grid-row: 2;
+}
+#l3 {
+    grid-row: 3;
+}
+#l4 {
+    grid-row: 4;
+}
+#name {
+    grid-column: 2;
+    width: 300px;
+}
+#email {
+    grid-area: 2 2;
+    width: 300px;
+}
+#phone {
+    grid-area: 3 2;
+    width: 300px;
+}
+#message {
+    grid-area: 4 2;
+    resize: none;
+}
+#send {
+    grid-row: 5;
+    grid-column: 2;
+    width: 120px;
+}
